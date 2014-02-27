@@ -26,6 +26,9 @@ admin_user = quantum
 admin_password = swordfish
 
 [database]
+# sqlalchemy_pool_size fixes the bug below:
+#    https://bugs.launchpad.net/tripleo/+bug/1184484
+sqlalchemy_pool_size = 40
 connection = mysql://quantum:swordfish@localhost/quantum
 
 [quotas]

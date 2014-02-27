@@ -154,7 +154,6 @@ Keystone Service
 
 ::
 
-    source ./openrc
     ./initialize-keystone.sh
 ..
 

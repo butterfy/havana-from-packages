@@ -1,20 +1,20 @@
 #!/bin/bash
 
 apt-get install --yes \
-  nova-api \
-  nova-cert \
-  nova-common \
-  nova-conductor \
-  nova-scheduler \
-  python-nova \
-  python-novaclient \
-  nova-consoleauth \
-  novnc \
-  nova-novncproxy \
-  nova-compute-kvm
+    nova-api \
+    nova-cert \
+    nova-common \
+    nova-conductor \
+    nova-scheduler \
+    python-nova \
+    python-novaclient \
+    nova-consoleauth \
+    novnc \
+    nova-novncproxy \
+    nova-compute-kvm
 
 
-pip install --upgrade websockify
+pip install --upgrade 'websockify<0.6.0'
 
 #-------------------------------------------------------------------------------
 #

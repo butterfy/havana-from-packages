@@ -6,6 +6,9 @@ cat << EOF > /etc/cinder/cinder.conf.changes
 [DEFAULT]
 sql_connection = mysql://cinder:swordfish@localhost/cinder
 rabbit_password = guest
+# Do not zero volumes on destroy
+# This is not required on my lab, which in most cases are for testing only
+volume_clear = none
 EOF
 
 #-------------------------------------------------------------------------------

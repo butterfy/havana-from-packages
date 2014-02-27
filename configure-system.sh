@@ -25,9 +25,9 @@ apt-get update
 
 
 apt-get install --yes \
-	python-dev \
-	python-setuptools \
-	htop
+    python-dev \
+    python-setuptools \
+    htop
 
 
 easy_install pip
