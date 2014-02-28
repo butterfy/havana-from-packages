@@ -28,7 +28,7 @@ Configure the system
 
 ::
 
-    ./configure-system.sh
+    >$ sudo ./configure-system.sh
 ..
 
 **Manual**
@@ -51,7 +51,7 @@ Configure the system
 
     # Public -proposed archive mimicking the SRU process for extended testing.
     # Packages should bake here for at least 7 days. 
-    deb http://ubuntu-cloud.archive.canonical.com/ubuntu precise-proposed/havana main
+    #deb http://ubuntu-cloud.archive.canonical.com/ubuntu precise-proposed/havana main
 ..
 
 * Update
@@ -104,12 +104,12 @@ MySQL
 
 ::
 
-    ./install-mysql.sh
+    >$ sudo ./install-mysql.sh
 ..
 
 ::
 
-    ./initialize-mysql.sh
+    >$ sudo ./initialize-mysql.sh
 ..
 
 **Manual**
@@ -125,7 +125,7 @@ RabbitMQ Server
 
 ::
 
-    ./install-rabbitmq-server.sh
+    >$ sudo ./install-rabbitmq.sh
 ..
 
 **Manual**
@@ -144,17 +144,17 @@ Keystone Service
 
 ::
 
-    ./install-keystone.sh
+    >$ sudo ./install-keystone.sh
 ..
 
 ::
 
-    ./configure-keystone.sh
+    >$ sudo ./configure-keystone.sh
 
 
 ::
 
-    ./initialize-keystone.sh
+    >$ sudo ./initialize-keystone.sh
 ..
 
 **Manual**
@@ -170,17 +170,17 @@ Image Service
 
 ::
 
-    ./install-glance.sh
+    >$ sudo ./install-glance.sh
 ..
 
 ::
 
-    ./configure-glance.sh
+    >$ sudo ./configure-glance.sh
 ..
 
 ::
 
-    ./initialize-glance.sh
+    >$ sudo ./initialize-glance.sh
 ..
 
 **Manual**
@@ -196,12 +196,12 @@ Block Storage
 
 ::
 
-    ./install-cinder.sh
+    >$ sudo ./install-cinder.sh
 ..
 
 ::
 
-    ./configure-cinder.sh
+    >$ sudo ./configure-cinder.sh
 ..
 
 **Manual**
@@ -240,7 +240,7 @@ Dashboard
 
 ::
 
-    ./install-dashboard.sh
+    >$ sudo ./install-dashboard.sh
 ..
 
 **Manual**
@@ -256,12 +256,12 @@ Heat
 
 ::
 
-    ./install-heat.sh
+    >$ sudo ./install-heat.sh
 ..
 
 ::
 
-    ./configure-heat.sh
+    >$ sudo ./configure-heat.sh
 ..
 
 **Manual**
@@ -270,7 +270,7 @@ Heat
 
 ::
 
-    apt-get -y install heat-api heat-api-cfn heat-api-cloudwatch \
+    ># apt-get -y install heat-api heat-api-cfn heat-api-cloudwatch \
         heat-common heat-engine python-heat python-heatclient
 ..
 
@@ -332,14 +332,14 @@ Network part
 
 ::
 
-    ./install-neutron.sh
+    >$ sudo ./install-neutron.sh
 ..
 
 * Configure OpenVSwitch - http://docs.openstack.org/grizzly/basic-install/apt/content/basic-install_network.html#basic-install_network-services
 
 ::
 
-    ./configure-neutron.sh
+    >$ sudo ./configure-neutron.sh
 ..
 
 **Manual**
@@ -357,12 +357,12 @@ Compute part
 
 ::
 
-    ./install-compute.sh
+    >$ sudo ./install-compute.sh
 ..
 
 ::
 
-    ./configure-compute.sh
+    >$ sudo./configure-compute.sh
 ..
 
 **Manual**

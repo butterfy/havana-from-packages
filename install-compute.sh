@@ -14,7 +14,7 @@ apt-get install --yes \
     nova-compute-kvm
 
 
-pip install --upgrade 'websockify<0.6.0'
+#pip install --upgrade 'websockify<0.6.0'
 
 #-------------------------------------------------------------------------------
 #

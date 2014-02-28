@@ -19,7 +19,7 @@ service open-iscsi start
 
 cinder_lvm_volume='cinder-volumes'
 
-if [[ $(lvdisplay -c | cut -d':' -f 2) = $cinder_lvm_volume ]]; then
+if [[ $(vgdisplay -c | cut -d':' -f 2) = $cinder_lvm_volume ]]; then
     echo "Volume '$cinder_lvm_volume' already exists."
     exit
 fi
